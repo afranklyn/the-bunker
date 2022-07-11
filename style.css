@@ -12,9 +12,9 @@
     box-sizing: border-box;
 }
 
-/* Temp Styles */
+/* TEMP STYLES */
 
-* {
+/* * {
     padding: 0.5rem;
     border: 1px solid rgb(220, 220, 220)
 }
@@ -30,24 +30,30 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 .bg-image {
     background-color: rgb(184, 184, 132);
-}
+} */
 
 /* END TEMP STYLES */
 
 /* UNVIERSAL AND UTILITY STYLES */
 
+.tall-50    {min-height: 50vh;}
+.tall-60    {min-height: 60vh;}
+.tall-70    {min-height: 70vh;}
+.tall-80    {min-height: 80vh;}
+.tall-90    {min-height: 90vh;}
+
+
 .padded     {padding: 5%;}
+.padded-lg  {padding: 10%;}
 .padded-1   {padding: 1rem;}
 .padded-2   {padding: 2rem;}
+
+.margin-b-0 {margin-bottom: 0;}
 
 .bg-featured {background-color: #1C2A2C; }
 .bg-dark     {background-color: #24282B; }
 
-.light-text {color: white;}
 
-.text-left {text-align: left;}
-.text-center {text-align: center;}
-.text-right {text-align: right;}
 
 /* TYPOGRAPHY STYLES */
 
@@ -65,8 +71,47 @@ h1 {font-size: 8rem;}
 h2 {font-size: 2.5rem;}
 h3 {font-size: 1.8rem;}
 
-p, a, li {
+p, li {
     font-weight: 300;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    margin-bottom: 0.8rem;
+}
+
+p:last-child,
+li:last-child {
+    margin-bottom: 0;
+}
+
+a {
+    color: inherit;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #158287;
+}
+
+.fa-brands {
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
+
+.light-text {color: white;}
+
+.text-left {text-align: left;}
+.text-center {text-align: center;}
+.text-right {text-align: right;}
+
+.not-bold {font-weight: 400;}
+
+.subtle {
+    opacity: 0.8;
+    font-size: 0.9rem;
+    font-style: italic;
 }
 
 /* BACKGROUND IMAGES */
@@ -96,11 +141,15 @@ p, a, li {
 }
 
 .bg-map {
-    background-image: url('/images/the-bunker-map.jpg');
+    background-image: url('/images/the-bunker-map.png');
 }
 
 .bg-sheets {
     background-image: url('/images/the-bunker-sheets.jpg');
+}
+
+.bg-padded {
+    padding-bottom: 30%
 }
 
 /* BACKGROUND POSITIONS */
@@ -117,3 +166,13 @@ p, a, li {
   padding: 1%;
 }
 
+/* FOOTER STYLES */
+
+footer h2 {
+    font-size: 6rem;
+    line-height: 1;
+}
+
+footer p {
+    margin-bottom: 0.2rem;
+}
