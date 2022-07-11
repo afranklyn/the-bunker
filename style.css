@@ -114,6 +114,15 @@ a:hover {
     font-style: italic;
 }
 
+.map-button {
+    background-color: white;
+    text-decoration: none;
+    border-radius: 10px;
+/*  Top and bottom then left and right  */
+    padding: 1rem 1.5rem;
+    transition: all 0.2s;
+}
+
 /* BACKGROUND IMAGES */
 
 .bg-image {
@@ -175,4 +184,25 @@ footer h2 {
 
 footer p {
     margin-bottom: 0.2rem;
+}
+
+
+/* RESPONSIVE STYLES */
+
+/* SM media query */
+
+@media(max-width: 48em) {
+    .hide-sm {display: none;}
+    
+    .flex-flip-sm {flex-direction: column-reverse;}
+
+    h1 {font-size: 4rem;}
+
+    footer h2 {font-size: 3rem;}
+
+    .social-banner {
+        background-image: none;
+        background-color:#1C2A2C;
+        min-height: 30vh;
+    }
 }
