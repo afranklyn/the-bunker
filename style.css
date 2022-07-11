@@ -1,3 +1,11 @@
+/* 
+- dark green - #1C2A2C
+- footer dark - #24282B
+- font-family: 'Raleway', sans-serif;
+- 300 400 500 900 (normal and italic)
+
+*/
+
 * {
     padding: 0;
     margin: 0;
@@ -25,3 +33,87 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 /* END TEMP STYLES */
+
+/* UNVIERSAL AND UTILITY STYLES */
+
+.padded     {padding: 5%;}
+.padded-1   {padding: 1rem;}
+.padded-2   {padding: 2rem;}
+
+.bg-featured {background-color: #1C2A2C; }
+.bg-dark     {background-color: #24282B; }
+
+.light-text {color: white;}
+
+.text-left {text-align: left;}
+.text-center {text-align: center;}
+.text-right {text-align: right;}
+
+/* TYPOGRAPHY STYLES */
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+h1 {font-size: 8rem;}
+h2 {font-size: 2.5rem;}
+h3 {font-size: 1.8rem;}
+
+p, a, li {
+    font-weight: 300;
+}
+
+/* BACKGROUND IMAGES */
+
+.bg-image {
+    background-color: #24282B;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('/images/the-bunker-bed.jpg');
+}
+
+.bg-building {
+    background-image: url('/images/the-bunker-building.jpg');
+}
+
+.bg-chairs {
+    background-image: url('/images/the-bunker-chairs.jpg');
+}
+
+.bg-hall {
+    background-image: url('/images/the-bunker-hall.jpg');
+}
+
+.bg-lounge {
+    background-image: url('/images/the-bunker-lounge.jpg');
+}
+
+.bg-map {
+    background-image: url('/images/the-bunker-map.jpg');
+}
+
+.bg-sheets {
+    background-image: url('/images/the-bunker-sheets.jpg');
+}
+
+/* BACKGROUND POSITIONS */
+.bg-pos-t { background-position: top; }
+.bg-pos-b { background-position: bottom; }
+.bg-pos-l { background-position: left; }
+.bg-pos-r { background-position: right; }
+
+.bg-pos-t-l { background-position: 10% 10%; }
+.bg-pos-b-r { background-position: 85% 85%; }
+
+
+.gallery [class*="col-"] {
+  padding: 1%;
+}
+
